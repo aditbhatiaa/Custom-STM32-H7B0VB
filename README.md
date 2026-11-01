@@ -30,8 +30,6 @@ All five externally accessible pins have independent timer assignments.
 
 | GPIO Pin | Physical Pin | Function    | Timer / Channel |
 | -------- | ------------ | ----------- | --------------- |
-
-
 | PA8      | 67           | Digital PWM | TIM1_CH1        |
 | PC9      | 66           | Digital PWM | TIM8_CH4 (AF3)  |
 | PA6      | 30           | Digital PWM | TIM13_CH1       |
