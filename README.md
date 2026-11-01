@@ -47,3 +47,5 @@ PC9 uses TIM8_CH4 (AF3), instead of the previously considered TIM3_CH4 assignmen
 | PA5      | 29           | ADC, DAC1_OUT2      |
 | PC2_C    | 17           | Direct ADC3 channel |
 | PC3_C    | 18           | Direct ADC3 channel |
+
+Note: The pins assigned to communication protocols can also be used as additional GPIO pins if necessary.
