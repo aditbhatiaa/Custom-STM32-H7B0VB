@@ -26,17 +26,25 @@ The board contains one instance each of UART, I2C, SPI and CAN, plus analog, PWM
 
 ### 2. Digital I/O and PWM
 
-All seven pins have independent timer assignments.
+All five externally accessible pins have independent timer assignments.
 
 | GPIO Pin | Physical Pin | Function    | Timer / Channel |
 | -------- | ------------ | ----------- | --------------- |
-| PE5      | 4            | LED1 / PWM  | TIM15_CH1       |
-| PB0      | 34           | LED2 / PWM  | TIM3_CH3        |
+
+
 | PA8      | 67           | Digital PWM | TIM1_CH1        |
 | PC9      | 66           | Digital PWM | TIM8_CH4 (AF3)  |
 | PA6      | 30           | Digital PWM | TIM13_CH1       |
 | PA7      | 31           | Digital PWM | TIM14_CH1       |
 | PD12     | 59           | Digital PWM | TIM4_CH1        |
+
+### Onboard LEDs
+
+The following LED connections are onboard-only and are not available on external headers.
+
+- **D3** is driven by **PE5** through **R7**.
+- **D2** is driven by **PB0** through **R5**.
+- **LED1** is the **3.3 V power indicator** and is not GPIO-controlled.
 
 PC9 uses TIM8_CH4 (AF3), instead of the previously considered TIM3_CH4 assignment.
 
