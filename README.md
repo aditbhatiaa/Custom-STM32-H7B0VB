@@ -9,13 +9,20 @@ The board contains one instance each of UART, I2C, SPI and CAN, plus analog, PWM
 ## Complete Pinout:
 ### 1. Communication protocols
 
-| Interface    | Pin mapping |
-| ------------ | ----------- |
-| UART (USART1) | PA9 → TX (68), PA10 → RX (69) |
-| I2C (I2C1)    | PB8 → SCL (95), PB9 → SDA (96) |
-| SPI (SPI2)    | PB13 → SCK (52), PB14 → MISO (53), PB15 → MOSI (54), PB12 → CS (51) |
-| CAN (FDCAN1)  | PD0 → RX (81), PD1 → TX (82) |
-| USB          | PA11 → D− (70), PA12 → D+ (71) |
+| Interface     | GPIO Pin | Function | Physical Pin |
+| ------------- | -------- | -------- | ------------ |
+| UART (USART1) | PA9      | TX       | 68           |
+|               | PA10     | RX       | 69           |
+| I2C (I2C1)    | PB8      | SCL      | 95           |
+|               | PB9      | SDA      | 96           |
+| SPI (SPI2)    | PB13     | SCK      | 52           |
+|               | PB14     | MISO     | 53           |
+|               | PB15     | MOSI     | 54           |
+|               | PB12     | CS       | 51           |
+| CAN (FDCAN1)  | PD0      | RX       | 81           |
+|               | PD1      | TX       | 82           |
+| USB           | PA11     | D−       | 70           |
+|               | PA12     | D+       | 71           |
 
 ### 2. Digital I/O and PWM
 
